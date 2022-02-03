@@ -31,12 +31,16 @@
         .header a:hover {
             background-color: #30ccb9;
             color: white;
+            border: white;
+            text-decoration: none;
             }
 
         /* Style the active/current link*/
         .header a.active {
             background-color: #30ccb9;
             color: white;
+            border: white;
+            text-decoration: none;
             }
 
 /* Float the link section to the right */
@@ -51,7 +55,7 @@ body, html {
     background-image: url(../images/paper-sheets-background.jpg);
 }
     
-    /* Container for hero image */
+    /* Container for hero image on About page */
 .container {    
     height: 70%;
     width: 45%;
@@ -65,14 +69,21 @@ body, html {
     border-radius: 15px;
     }
 
-    .container-fluid {    
-        height: 100%;
-        width: 100%;
-        padding: 14px 40px;
-        /* Position and center the image to scale nicely on all screens */
-        position: center;
-        position: relative;
-        }
+    /* Cards */
+.card {
+    width: 250px;
+    justify-content: space-between;
+    height: 100%;
+    }
+
+.cardInvisible {
+    opacity: 1;
+}
+
+.cardContainer {
+    justify-content: center;
+    height: 100%;
+    } 
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
@@ -92,6 +103,10 @@ body, html {
 }
 
 /* Style typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
 h1 {
     font-size: 50px;
     color: white !important;
@@ -100,13 +115,33 @@ h1 {
 h2 {
     font-size: 30px;
     color: white;
+    }
+
+h3 {
+        font-size: 22px;
+        color: white;
+        font-weight: bold;
+        }
+
+h5 {
+    font-weight: bold;
 }
 
 p {
     font-size: 20px;
     color: white;
+    font-weight: lighter;
 }
 
+li {
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+}
+
+
+
+/* Style buttons */
 button {
     background: #30ccb9;
     border: none;
@@ -116,8 +151,16 @@ button {
     text-decoration: none;
     font-size: 20px;
     border-radius: 8px;
-    margin-top: 30px;
+    margin-top: 50px;
     }
+
+    /* Button states */
+    button a:hover {
+        background-color: darkturquoise;
+        color: white;
+        border: white;
+        text-decoration: none;
+        }
 
     /* Footer Styles */
 .footer {
@@ -125,7 +168,6 @@ button {
     justify-content: center;
     align-items: center;
     height: 100px;
-    margin-bottom: 0;
     opacity: 1;
     }
 
@@ -164,10 +206,7 @@ button {
     color: white;
   }
 
-  .pantala {
-      height: 100%;
-  }
-
+  
 
   
 
