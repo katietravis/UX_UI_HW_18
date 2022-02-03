@@ -52,14 +52,27 @@ body, html {
 }
     
     /* Container for hero image */
-.container-fluid {    
-    height: 100%;
-    width: 100%;
+.container {    
+    height: 70%;
+    width: 45%;
     padding: 14px 40px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     opacity: 1;
     border-radius: 15px;
     }
+
+    .container-fluid {    
+        height: 100%;
+        width: 100%;
+        padding: 14px 40px;
+        /* Position and center the image to scale nicely on all screens */
+        position: center;
+        position: relative;
+        }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
@@ -80,8 +93,8 @@ body, html {
 
 /* Style typography */
 h1 {
-    font-size: 40px;
-    color: white;
+    font-size: 50px;
+    color: white !important;
     }
 
 h2 {
@@ -150,6 +163,12 @@ button {
   .fa-instagram {
     color: white;
   }
+
+  .pantala {
+      height: 100%;
+  }
+
+
   
 
 
