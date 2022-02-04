@@ -85,14 +85,19 @@ body, html {
     padding: 30px;
     }
 
-.cardVisible {
-    background-color: white;
-}
-
 .cardContainer {
     justify-content: center;
-    height: 100%;
     } 
+
+    #myWork .cardVisible {
+        background-color: white;
+        height: 100%;
+        height: 400px;
+        width: 200px;      
+        display: flex;
+        align-items: center;
+        margin-bottom:20px;
+        }
 
 /* Style typography */
 h1, h2, h3, h4, h5, h6 {
@@ -129,7 +134,7 @@ p {
     font-size: 20px;
     color: white;
     font-weight: lighter;
-}
+    }
 
 li {
     font-size: 20px;
@@ -138,20 +143,27 @@ li {
 }
 
 /* Style buttons */
-.button {
+button {
     background: #30ccb9;
-    border: none;
     color: white;
+    border: none;
     padding: 14px 40px;
     text-align: center;
-    text-decoration: none;
     font-size: 20px;
     margin-top: 50px;
     }
 
     /* Button states */
-    .button a:hover {
-        background-color: darkturquoise;
+    button a:hover {
+        background-color: #30ccb9;
+        color: white;
+        border: none;
+        text-decoration: none;
+        }
+
+        /* Button states */
+    button a:active {
+        background-color: #30ccb9;
         color: white;
         border: none;
         text-decoration: none;
@@ -160,18 +172,10 @@ li {
 .myWork {
     height: 100%;
     width: 100%;
+    align-items: center;
 }    
     
-.caseStudies {  
-    flex-direction: row-reverse;
-    justify-content: space-around;
-   }
-
-.img {
-    size: auto;
-}
-
-     /* Footer Styles */
+/* Footer Styles */
 .footer {
     display: flex;
     justify-content: center;
@@ -228,12 +232,17 @@ li {
         float: none;
         }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .flex-container {
       flex-direction: column;
     }
   }
 
+  @media (max-width: 500px) {
+    .logo {
+    text-align: center;
+    }
+  }
 
   
 
