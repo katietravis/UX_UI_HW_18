@@ -140,7 +140,7 @@ li {
 }
 
 /* Style buttons */
-.button {
+button {
     background: #30ccb9;
     border: none;
     color: white;
@@ -171,13 +171,13 @@ li {
 }
 
     /* Footer Styles */
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    opacity: 1;
-    }
+    .footer {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        opacity: 1;
+        text-align: center;
+        }
 
 .footer a {
     color: white;
@@ -224,12 +224,6 @@ li {
     .header-right {
         float: none;
         }
-}
-    position: absolute;
-    top: 30%;
-    color: white;
-   }
-}
 
 @media (max-width: 800px) {
     .flex-container {
