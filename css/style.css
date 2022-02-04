@@ -67,7 +67,23 @@ body, html {
     border-radius: 15px;
     }
 
-    /* Cards */
+/* Cards */
+.content {
+    padding: 50px;
+  }
+
+.sectionHeading {
+text-align: center;
+}
+
+.caseStudies  {
+padding: 0px 30px 30px 30px;
+}
+
+.cardContainer {
+text-align: center;
+}
+
 .card {
     width: 250px;
     justify-content: space-between;
@@ -83,21 +99,19 @@ body, html {
 .cardInvisible {
     opacity: 1;
     padding: 30px;
+    
     }
+
+    .cardInvisible2 {
+        opacity: 1;
+        padding: 30px;
+        width: 300px;
+        height: 100px;
+        }
 
 .cardContainer {
     justify-content: center;
     } 
-
-    #myWork .cardVisible {
-        background-color: white;
-        height: 100%;
-        height: 400px;
-        width: 200px;      
-        display: flex;
-        align-items: center;
-        margin-bottom:20px;
-        }
 
 /* Style typography */
 h1, h2, h3, h4, h5, h6 {
@@ -143,7 +157,7 @@ li {
 }
 
 /* Style buttons */
-button {
+.button {
     background: #30ccb9;
     color: white;
     border: none;
@@ -169,12 +183,6 @@ button {
         text-decoration: none;
         }
 
-.myWork {
-    height: 100%;
-    width: 100%;
-    align-items: center;
-}    
-    
 /* Footer Styles */
 .footer {
     display: flex;
