@@ -7,7 +7,7 @@
     }
 
 .logo {
-    background: url(../images/logo-final-white.png);
+    background-image: url(../images/logo-final-white.png);
     background-repeat: no-repeat;
     height: 100px;
     width: 400px;
@@ -31,16 +31,12 @@
         .header a:hover {
             background-color: #30ccb9;
             color: white;
-            border: white;
-            text-decoration: none;
             }
 
         /* Style the active/current link*/
         .header a.active {
             background-color: #30ccb9;
             color: white;
-            border: white;
-            text-decoration: none;
             }
 
 /* Float the link section to the right */
@@ -53,6 +49,8 @@ body, html {
     width: 100%;
     font-family: 'Lato', sans-serif;
     background-image: url(../images/paper-sheets-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
     
     /* Container for hero image on About page */
@@ -140,7 +138,7 @@ li {
 }
 
 /* Style buttons */
-button {
+.button {
     background: #30ccb9;
     border: none;
     color: white;
@@ -148,15 +146,14 @@ button {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    border-radius: 8px;
     margin-top: 50px;
     }
 
     /* Button states */
-    button a:hover {
+    .button a:hover {
         background-color: darkturquoise;
         color: white;
-        border: white;
+        border: none;
         text-decoration: none;
         }
 
@@ -165,19 +162,24 @@ button {
     width: 100%;
 }    
     
-.caseStudies {}  
-    display: flex;
-    flex-direction: row;
+.caseStudies {  
+    flex-direction: row-reverse;
+    justify-content: space-around;
+   }
+
+.img {
+    size: auto;
 }
 
-    /* Footer Styles */
-    .footer {
-        display: flex;
-        align-items: center;
-        height: 100px;
-        opacity: 1;
-        text-align: center;
-        }
+     /* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 0;
+    opacity: 1;
+    }
 
 .footer a {
     color: white;
@@ -212,6 +214,7 @@ button {
 
   .fa-instagram {
     color: white;
+  }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
@@ -230,6 +233,8 @@ button {
       flex-direction: column;
     }
   }
+
+
   
 
   
