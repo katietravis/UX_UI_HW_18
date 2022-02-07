@@ -6,11 +6,10 @@
     }
 
 .logo {
-    background-image: url(../images/logo-final-white.png);
     height: 120px;
     width: 400px;
     position: flex;
-    margin-left: 100px;
+    margin-left: 50px;
     }
 
 /* Style the header nav links */
@@ -90,7 +89,6 @@ text-align: left;
 
 .card {
     width: 250px;
-    justify-content: space-between;
     height: 100%;
     transition: 0.3s;
     padding: 2px 16px;
