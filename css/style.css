@@ -168,9 +168,10 @@ button {
 
     /* Button states */
     button a:hover {
-        text-decoration: none;
         color: white;
-        }
+        border: none;
+        text-decoration: none;
+    }
 
         /* Button states */
     button a:active {
